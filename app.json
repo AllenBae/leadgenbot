@@ -1,0 +1,15 @@
+{
+  "name": "Leadgen Bot Sample App",
+  "description": "A sample bot for lead generation with Facebook messenger",
+  "repository": "https://github.com/alanhhwong/TemplateBot",
+  "logo": "https://livestreamingpros.com/wp-content/uploads/2017/06/bot-icon.png",
+  "keywords": ["messenger", "bot"],
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ],
+  "env": {
+    "FB_APP_ID": null,
+    "FB_APP_SECRET": null,
+    "HEROKU_APP_NAME": null
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+      "type": "greeting",
+      "text": "Welcome to Ford Australia!"
+  },
+  {
+      "type": "greeting",
+      "text": "The Ford Australia Concierge Bot is here to help you book your Ultimate Mustang Road Trip experience this Australia Day long weekend."
+  },
+  {
+      "type": "greeting",
+      "text": "We want you to take a two hour test drive in the iconic Pony car around some of Australia’s most beautiful driving roads, including the Mornington Peninsula in Victoria, the Northern Beaches in Sydney and Coolangatta in Queensland."
+  },
+  {
+      "type": "question",
+      "text": "Are you interested?",
+      "options": [
+          {
+              "text": "Yes",
+              "resp_payload": "0.Yes"
+          },
+          {
+              "text": "No",
+              "resp_payload": "1.No"
+          }
+      ]
+  }
+]

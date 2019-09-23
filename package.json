@@ -1,0 +1,77 @@
+{
+  "name": "templatebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "build": "./tools/build.sh",
+    "start": "./tools/start.sh",
+    "test": "jest --forceExit",
+    "postinstall": "./tools/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanhhwong/TemplateBot.git"
+  },
+  "engines": {
+    "node": "9.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-csv": "^0.6.0",
+    "invariant": "^2.2.2",
+    "moment-timezone": "^0.5.23",
+    "mustache": "^3.0.0",
+    "object-path-immutable": "^3.0.0",
+    "react-datepicker": "^2.0.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "socketio": "^1.0.0",
+    "winston": "^3.0.0-rc1"
+  },
+  "author": "Alan Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanhhwong/TemplateBot/issues"
+  },
+  "homepage": "https://github.com/alanhhwong/TemplateBot#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bootstrap": "^4.0.0",
+    "css-loader": "^1.0.1",
+    "dot": "^1.1.2",
+    "file-loader": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "fs-extra": "^7.0.0",
+    "jest-cli": "^23.6.0",
+    "jointjs": "^2.2.1",
+    "less": "^3.8.1",
+    "less-loader": "^4.0.5",
+    "localtunnel": "^1.9.1",
+    "lsbridge": "^0.2.0",
+    "nodemon": "^1.18.6",
+    "raphael": "^2.2.7",
+    "react": "^16.6.3",
+    "react-burger-menu": "^2.2.3",
+    "react-dom": "^16.2.0",
+    "react-responsive-modal": "^3.5.0",
+    "react-toastify": "^3.3.2",
+    "redis-js": "^0.1.2",
+    "source-map-support": "^0.5.3",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.6.0",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
