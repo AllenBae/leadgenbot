@@ -3,15 +3,15 @@ Leadgen Bot
 
 Messenger chatbot to collect leads.
 
-# Deploy to Heroku
+## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template={{=it.GITHUBREPO}})
 
-# Local Development
+## Local Development
 
 Before getting started, please ensure you have `ngrok` installed if you are going to use it. Ngrok can be downloaded here: https://ngrok.com/
 
-## Steps
+### Steps
 
 1. `npm install`.
 2. `cp sample/dot.env.sample .env`, modify app id and app secret inside to be yours, leave `HEROKU_LOCAL_URL` variable as is, no need to worry. In default will use `ngrok` as tunneling method, if you need to use `localtunnel`, please modify `TUNNEL_METHOD=localtunnel`.
@@ -22,13 +22,13 @@ Before getting started, please ensure you have `ngrok` installed if you are goin
 7. Pay attention to the log, and go to tunnel URL in the log output for the setup UI, connect your page.
 8. Go to your bot for testing.
 
-# Local Development with Redis
+## Local Development with Redis
 
-## Install Redis first
+### Install Redis first
 
 * `brew install redis`
 
-## Steps
+### Steps
 
 1. `npm install`.
 2. `cp sample/dot.env.sample .env`, modify app id and app secret inside to be yours, leave `HEROKU_LOCAL_URL` variable as is, no need to worry. In default will use `ngrok` as tunneling method, if you need to use `localtunnel`, please modify `TUNNEL_METHOD=localtunnel`.
@@ -39,12 +39,12 @@ Before getting started, please ensure you have `ngrok` installed if you are goin
 7. Pay attention to the log, and go to tunnel URL in the log output for the setup UI, connect your page.
 8. Go to your bot for testing.
 
-## How to check the data with Redis
+### How to check the data with Redis
 
 1. `cat .redis.env` to find out Redis PORT
 2. `redis-cli -p $PORT` to connect your Redis to check data
 
-## How to import sample question with Redis
+### How to import sample question with Redis
 
 1. Go to UI, connect your page, then go to tab 'Manage Questions'
 2. Open `sample/data/question_flow_default.json`, copy everything into clipboard
