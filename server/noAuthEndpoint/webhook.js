@@ -16,6 +16,9 @@ function receivedMessage(event, dh) {
     `Received message for user ${senderID} and page ${recipientID} at ${timeOfMessage} ` +
     `with message: ${JSON.stringify(message)}`
   );
+  logger.info(
+    `Full data: ${JSON.stringify(event)}`
+  );
 
   Promise.all([
     dh.getQuestionFlow(),
