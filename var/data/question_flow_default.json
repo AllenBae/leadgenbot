@@ -1,0 +1,190 @@
+[
+    {
+        "type": "greeting",
+        "text": "Welcome to Ford Australia!"
+    },
+    {
+        "type": "greeting",
+        "text": "The Ford Australia Concierge Bot is here to help you book your Ultimate Mustang Road Trip experience this Australia Day long weekend."
+    },
+    {
+        "type": "greeting",
+        "text": "We want you to take a two hour test drive in the iconic Pony car around some of Australia’s most beautiful driving roads, including the Mornington Peninsula in Victoria, the Northern Beaches in Sydney and Coolangatta in Queensland."
+    },
+    {
+        "type": "question",
+        "text": "Are you interested?",
+        "options": [
+            {
+                "text": "Yes",
+                "resp_payload": "0.Yes"
+            },
+            {
+                "text": "No",
+                "resp_payload": "1.No",
+                "next": "#notinterested"
+            }
+        ]
+    },
+    {
+        "type": "greeting",
+        "text": "Great! Let’s get started! We need to collect some details from you."
+    },
+    {
+        "type": "question",
+        "text": "Where are you located? ",
+        "options": [
+            {
+                "text": "Near Melbourne Victoria",
+                "resp_payload": "0.Near Melbourne Victoria"
+            },
+            {
+                "text": "Near Sydney New South Wales",
+                "resp_payload": "1.Near Sydney New South Wales"
+            },
+            {
+                "text": "Near Coolangatta",
+                "resp_payload": "2.Near Coolangatta"
+            },
+            {
+                "text": "Queensland",
+                "resp_payload": "3.Queensland"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "text": "Are you a fully licensed driver? The Ultimate Mustang Road Trip is only available to drivers who are legally able to drive and hold a full licence (no P or L platers, or licence holders with restrictions).",
+        "options": [
+            {
+                "text": "Yes",
+                "resp_payload": "0.Yes"
+            },
+            {
+                "text": "No",
+                "resp_payload": "1.No",
+                "next": "#nolicense"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "text": "How old are you?",
+        "options": [
+            {
+                "text": "Under 25",
+                "resp_payload": "0.Under 25"
+            },
+            {
+                "text": "Over 25",
+                "resp_payload": "1.Over 25"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "text": "When would you like to book your road trip experience?",
+        "options": [
+            {
+                "text": "Thursday, 25 January",
+                "resp_payload": "0.Thursday, 25 January"
+            },
+            {
+                "text": "Friday, 26 January",
+                "resp_payload": "1.Friday, 26 January"
+            },
+            {
+                "text": "Saturday, 27 January",
+                "resp_payload": "2.Saturday, 27 January"
+            },
+            {
+                "text": "Sunday 28 January",
+                "resp_payload": "3.Sunday 28 January"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "text": "What time would you like to schedule your Ultimate Mustang Road Trip experience? Please note that the time slot includes 30 minutes for registration and a mandatory safety briefing.",
+        "options": [
+            {
+                "text": "08:30am - 11:00am",
+                "resp_payload": "0.08:30am - 11:00am"
+            },
+            {
+                "text": "9:00am – 11:30am",
+                "resp_payload": "1.9:00am – 11:30am"
+            },
+            {
+                "text": "12:30pm – 3:00pm",
+                "resp_payload": "2.12:30pm – 3:00pm"
+            },
+            {
+                "text": "1:00pm – 3:30pm",
+                "resp_payload": "3.1:00pm – 3:30pm"
+            }
+        ]
+    },
+    {
+        "type": "greeting",
+        "text": "We need some more details to book your experience. This may take a few minutes."
+    },
+    {
+        "type": "input",
+        "text": "What is your full name (first name, last name as written on your driver’s licence)?"
+    },
+    {
+        "type": "input",
+        "text": "What is your licence number?"
+    },
+    {
+        "type": "input",
+        "text": "What is your email address? (This is to confirm your registration)"
+    },
+    {
+        "type": "t&c",
+        "text": "To participate in the Ultimate Mustang Road Trip experience, you will need to agree to some terms and conditions, and to a legal waiver.",
+        "url": "http://www.didi-ads.com/policy.txt",
+        "urlText": "Terms & Conditions"
+    },
+    {   
+        "type": "question",
+        "text": "Agree terms and conditions?",
+        "options": [
+            {
+                "text": "Agree",
+                "resp_payload": "0.Agree"
+            },
+            {
+                "text": "Decline",
+                "resp_payload": "1.Decline",
+                "next": "#end"
+            }
+        ]
+    },
+    {
+        "type": "greeting",
+        "text": "Your Ultimate Mustang Road Trip has been booked!"
+    },
+    {
+        "type": "greeting",
+        "text": "We will send an email shortly to confirm these details, and have added the drive to your Facebook events. We will also send a reminder closer to the date."
+    },
+    {
+        "type": "greeting",
+        "text": "We hope you enjoy your Ultimate Mustang Road Trip experience!",
+        "next": "#end"
+    },
+    {
+        "type": "greeting",
+        "text": "Maybe next time! Do you need help from our customer service team?",
+        "anchor": "#notinterested",
+        "next": "#end"
+    },
+    {
+        "type": "greeting",
+        "text": "Unfortunately, due to safety and insurance reasons, The Ultimate Mustang Road Trip experience is only open to drivers who are legally able to drive on a full licence. Thank you for your interest.",
+        "anchor": "#nolicense",
+        "next": "#end"
+    }
+]
