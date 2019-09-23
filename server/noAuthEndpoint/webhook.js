@@ -178,8 +178,7 @@ function parseReferral(event, _dh) {
   let referral_ref = event.postback.referral.ref;
   let referral_source = event.postback.referral.source;
 
-  logger.error(
-    `*** Referral data: ${JSON.stringify(event.postback.referral)}`);
+  logger.error(`*** Referral data: ${JSON.stringify(event.postback.referral)}`);
   return;
 }
 
@@ -197,7 +196,8 @@ export function init(app, dh) {
     if (data.object == 'page') {
       data.entry.forEach((pageEntry) => {
         pageEntry.messaging.forEach((messagingEvent) => {
-          if (messagingEvent.postback.referral) {
+          logger.error(`*** Event: ${JSON.stringify(messagingEvent)}`);
+          if (messagingEvent.?postback.?referral) {
             parseReferral(messagingEvent, dh);
           }
           if (messagingEvent.message) {
