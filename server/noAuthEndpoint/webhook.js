@@ -178,8 +178,8 @@ function parseReferral(event, _dh) {
   let referral_ref = event.postback.referral.ref;
   let referral_source = event.postback.referral.source;
 
-  logger.info(
-    `Developer implementation of referral data: ${JSON.stringify(event.postback.referral)}`);
+  logger.error(
+    `Referral data: ${JSON.stringify(event.postback.referral)}`);
   return;
 }
 
