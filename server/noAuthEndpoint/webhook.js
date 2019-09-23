@@ -196,15 +196,11 @@ export function init(app, dh) {
     if (data.object == 'page') {
       data.entry.forEach((pageEntry) => {
         pageEntry.messaging.forEach((messagingEvent) => {
-          logger.error(`*** Event: ${JSON.stringify(messagingEvent)}`);
-          if (messagingEvent.?postback.?referral) {
-            parseReferral(messagingEvent, dh);
-          }
           if (messagingEvent.message) {
             receivedMessage(messagingEvent, dh);
-          } /*else if (messagingEvent.postback && messagingEvent.postback.referral) {
+          } else if (messagingEvent.postback && messagingEvent.postback.referral) {
             parseReferral(messagingEvent, dh);
-          } */else if (messagingEvent.postback) {
+          } else if (messagingEvent.postback) {
             receivedMessage(Object.assign(messagingEvent, {
               message: messagingEvent.postback.payload,
             }), dh);
