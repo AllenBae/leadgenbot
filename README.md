@@ -5,7 +5,7 @@ Messenger chatbot to collect leads.
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template={{=it.GITHUBREPO}})
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ckjo/leadgenbot.git)
 
 ## Local Development
 
