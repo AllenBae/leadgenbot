@@ -1,5 +1,5 @@
 {
-  "name": "templatebot",
+  "name": "leadgenbot",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanhhwong/TemplateBot.git"
+    "url": "git+https://github.com/ckjo/leadgenbot.git"
   },
   "engines": {
     "node": "9.4.0"
@@ -31,12 +31,12 @@
     "socketio": "^1.0.0",
     "winston": "^3.0.0-rc1"
   },
-  "author": "Alan Wong",
+  "author": "Chanki Jo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alanhhwong/TemplateBot/issues"
+    "url": "https://github.com/ckjo/leadgenbot.git/issues"
   },
-  "homepage": "https://github.com/alanhhwong/TemplateBot#readme",
+  "homepage": "https://github.com/ckjo/leadgenbot.git#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
